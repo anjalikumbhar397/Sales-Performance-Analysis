@@ -1,0 +1,25 @@
+import pandas as pd
+df = pd.read_excel("data/sales_data.xlsx")
+print("first 5 records")
+print(df.head())
+print("\ndataset shape")
+print(df.shape)
+print("\nColumns")
+print(df.columns)
+print("\ndata types")
+print(df.dtypes)
+print("\nMissing values")
+print(df.isnull().sum())
+duplicates = df.duplicated().sum()
+print(duplicates)
+df = df.drop_duplicates()
+df["Date"] = pd.to_datetime(df["Date"])
+df["Year"] = df["Date"].dt.year
+df["Month"] = df["Date"].dt.month_name()
+df["Quarter"] = df["Date"].dt.quarter
+print("\nUpdated dataset")
+print(df.head())
+df.to_excel("data/cleaned_sales_data.xlsx", index=False)
+print("\nData cleaning completed successfully!")
+print("cleaned file saved as : data/cleaned_sales_data.xlsx")
+
