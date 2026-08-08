@@ -1,161 +1,88 @@
-\# Sales Performance Analysis Dashboard
+# Sales Performance Analysis Dashboard
 
+An interactive sales analytics and forecasting dashboard built with Python and Streamlit.
 
+## Overview
 
-\## Overview
+The Sales Performance Analysis Dashboard helps analyze sales performance, track KPIs, visualize trends, and generate forecasts from sales data.
 
+## Features
 
+- Interactive sales dashboard
+- KPI performance tracking
+- Sales trend analysis
+- Interactive data filters
+- Sales visualization
+- Sales forecasting
+- Analysis and report generation
+- Exportable outputs
 
-Sales Performance Analysis Dashboard is an interactive data analytics application built using Python and Streamlit. It helps analyze sales trends, monitor key performance indicators (KPIs), visualize business insights, and support data-driven decisions.
+## Tech Stack
 
+| Category | Technologies |
+|---|---|
+| Programming | Python |
+| Data Analysis | Pandas, NumPy |
+| Visualization | Streamlit, Plotly, Matplotlib |
+| Machine Learning | Scikit-learn |
+| Development | VS Code, Git, GitHub |
 
+## Project Structure
 
-\## Features
-
-
-
-\- Interactive sales dashboard
-
-\- KPI performance tracking
-
-\- Sales trend visualization
-
-\- Data filtering and analysis
-
-\- Charts and reports generation
-
-\- Sales forecasting using machine learning models
-
-\- Exportable analysis outputs
-
-
-
-\## Tech Stack
-
-
-
-\### Programming Language
-
-\- Python
-
-
-
-\### Data Analysis
-
-\- Pandas
-
-\- NumPy
-
-
-
-\### Visualization
-
-\- Streamlit
-
-\- Plotly
-
-\- Matplotlib
-
-
-
-\### Machine Learning
-
-\- Scikit-learn
-
-
-
-\### Development Tools
-
-\- Git
-
-\- GitHub
-
-\- VS Code
-
-
-
-\## Project Structure
-
-Sales-Performance-Analysis
-
+```text
+Sales-Performance-Analysis/
 │
-
-├── dashboard
-
-│ ├── app.py
-
-│ ├── charts.py
-
-│ ├── filters.py
-
-│ ├── kpi.py
-
-│ └── utils.py
-
+├── dashboard/
+│   ├── app.py
+│   ├── charts.py
+│   ├── filters.py
+│   ├── kpi.py
+│   ├── utils.py
+│   └── styles.css
 │
-
-├── src
-
-│ ├── analysis.py
-
-│ ├── forecast.py
-
-│ ├── clean\_data.py
-
-│ └── visualization.py
-
+├── src/
+│   ├── analysis.py
+│   ├── clean_data.py
+│   ├── export_reports.py
+│   ├── forecast.py
+│   ├── generate_data.py
+│   └── visualization.py
 │
-
-├── data
-
-├── charts
-
-├── output
-
-├── screenshots
-
+├── data/
+├── charts/
+├── output/
+├── screenshots/
 │
-
+├── main.py
 ├── requirements.txt
-
+├── .gitignore
 └── README.md
-
-\## Installation
-
-
-
-Clone the repository:
-
-
-
-```bash
-
-git clone https://github.com/anjalikumbhar397/Sales-Performance-Analysis.git
-
-
-
-cd Sales-Performance-Analysis
-
-
-
-python -m venv venv
-
-
-
-pip install -r requirements.txt
-
-
-
-streamlit run dashboard/app.py
-
-
 
 Dashboard Preview
 
+Screenshots of the dashboard are available in the screenshots folder.
 
+<!-- Add your screenshot filenames below after checking the folder -->
+Installation
+1. Clone the repository
+git clone https://github.com/anjalikumbhar397/Sales-Performance-Analysis.git
+2. Open the project
+cd Sales-Performance-Analysis
+3. Create a virtual environment
+python -m venv venv
+4. Activate the virtual environment
 
+Windows:
 
+venv\Scripts\activate
+5. Install dependencies
+pip install -r requirements.txt
+6. Run the dashboard
+streamlit run dashboard/app.py
 
+The dashboard will open at:
+
+http://localhost:8501
 Future Improvements
 Advanced forecasting models
 Real-time sales data integration
@@ -165,4 +92,3 @@ Automated report generation
 Author
 
 Anjali Kumbhar
-
