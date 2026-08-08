@@ -60,18 +60,31 @@ Sales-Performance-Analysis/
 
 Dashboard Preview
 
-Screenshots of the dashboard are available in the screenshots folder.
+## Dashboard Preview
 
-<!-- Add your screenshot filenames below after checking the folder -->
-Installation
-1. Clone the repository
-git clone https://github.com/anjalikumbhar397/Sales-Performance-Analysis.git
-2. Open the project
-cd Sales-Performance-Analysis
-3. Create a virtual environment
-python -m venv venv
-4. Activate the virtual environment
+### Main Dashboard
 
+![Sales Performance Dashboard](screenshots/dashboard.png.png)
+
+### Monthly Sales Analysis
+
+![Monthly Sales Analysis](screenshots/Monthly%20Sales%20Analysis.png)
+
+### Product Analysis
+
+![Product Analysis](screenshots/Product%20Analysis.png)
+
+### Regional Performance Analysis
+
+![Regional Performance Analysis](screenshots/Regional%20Performance%20Analysis.png)
+
+### Sales Records and Filters
+
+![Sales Records and Filters](screenshots/Sales%20Records%20%26%20filters.png)
+
+### Salesperson Analysis
+
+![Salesperson Analysis](screenshots/Salesperson%20analysis.png)
 Windows:
 
 venv\Scripts\activate
